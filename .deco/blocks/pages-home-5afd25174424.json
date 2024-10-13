@@ -1,42 +1,61 @@
 {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "Header"
-      },
-      {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p>Click here to tweak this text however you want.</p>",
-        "cta": [],
-        "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
-      },
-      {
-        "__resolveType": "site/sections/Logos.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "placement": "right"
-      },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Testimonials.tsx",
-        "arrows": true
-      },
-      {
-        "__resolveType": "site/sections/Faq.tsx"
-      },
-      {
-        "__resolveType": "Footer"
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Header.tsx",
+      "navigation": {
+        "links": [
+          {
+            "label": "Sobre",
+            "url": "sobre"
+          },
+          {
+            "label": "Servicos"
+          },
+          {
+            "label": "Contatos"
+          }
+        ],
+        "buttons": [
+          {
+            "href": "login",
+            "text": "Agende agora"
+          }
+        ]
       }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "seo": {
-      "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Hero.tsx",
+      "title": "<p><strong>Dra Carolina Crespo: Especialista em alergia e imunologia</strong>.</p>",
+      "cta": [
+        {
+          "href": "link",
+          "text": "Agende sua consulta online"
+        }
+      ],
+      "description": "Com uma sólida formação e experiência, a Dra Carolina Crespo é referência em alergia e imunologia. Ela se dedica a oferecer um atendimento humanizado e eficaz, ajudando seus pacientes a viverem com mais saúde e qualidade de vida.",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/carolinacrespo/b22c40ca-30b0-4d6e-af0d-71b53f874172/Unsplash-picture.jpg",
+      "placement": "right"
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "title": "Conheça a Dra. Carolina Crespo",
+      "description": "A Dra. Carolina Crespo é especialista em alergologia e imunologia, com formação sólida e experiência em diversas patologias. Seu compromisso é oferecer um atendimento de qualidade e personalizado a cada paciente."
+    },
+    {
+      "__resolveType": "site/sections/Testimonials.tsx",
+      "arrows": true
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Contateme.tsx"
+      }
     }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
+}
